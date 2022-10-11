@@ -147,10 +147,12 @@ Use the removeFlavorByName function below to do the following:
   HINT: You can use .splice() for this
 */
 
-function removeFlavorByName(/*your code here*/){
-  /*your code here*/
+function removeFlavorByName(array, flavor){
+  const indexOfFlavor = array.indexOf(flavor);
+  array.splice(indexOfFlavor, 1);
+  return array;
 }
-
+console.log('task 6:', removeFlavorByName(originalFlavors, 'Raspberry Sherbet'));
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
